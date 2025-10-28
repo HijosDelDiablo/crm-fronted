@@ -1,0 +1,43 @@
+.chat-container {
+  background: #1e1e2f;
+  color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.bubble {
+  max-width: 75%;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  animation: fadeIn 0.3s ease;
+}
+
+.bubble.bot {
+  background: #2e2e4f;
+  align-self: flex-start;
+}
+
+.bubble.user {
+  background: #007bff;
+  align-self: flex-end;
+}
+
+.typing {
+  opacity: 0.8;
+  font-style: italic;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
