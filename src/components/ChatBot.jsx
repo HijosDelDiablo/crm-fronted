@@ -9,6 +9,9 @@ export default function ChatBot({ clients, setClients }) {
   const [input, setInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
 
+
+
+  
   // Modales controlados
   const [showAdd, setShowAdd] = useState(false);
   const [showEdit, setShowEdit] = useState(false);
